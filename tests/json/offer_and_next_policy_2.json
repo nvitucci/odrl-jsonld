@@ -1,0 +1,8 @@
+{
+    "policytype": "http://www.w3.org/ns/odrl/2/Set",
+    "policyid": "http://example.com/policy:7777",
+    "permissions": [{
+        "target": "http://example.com/wallpaper:2321",
+        "action": "http://www.w3.org/ns/odrl/2/display"
+    }]
+}

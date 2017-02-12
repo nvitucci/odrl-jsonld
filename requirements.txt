@@ -1,0 +1,11 @@
+appdirs==1.4.0
+functools32==3.2.3.post2
+isodate==0.5.4
+jsonschema==2.6.0
+packaging==16.8
+py==1.4.32
+pyparsing==2.1.10
+pytest==3.0.6
+rdflib==4.2.2
+rdflib-jsonld==0.4.0
+six==1.10.0

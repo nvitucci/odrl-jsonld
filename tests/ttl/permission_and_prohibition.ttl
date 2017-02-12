@@ -1,0 +1,20 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix drm: <http://oma.org/drm:> .
+
+<http://example.com/policy:3433>
+	a odrl:Agreement ;
+	odrl:conflict odrl:perm ;
+	odrl:permission [
+		odrl:action odrl:play ;
+		odrl:assignee <http://example.com/billie:888> ;
+		odrl:assigner <http://example.com/sony:10> ;
+		odrl:target <http://example.com/music:1234908>
+	] ;
+	odrl:prohibition [
+		odrl:action drm:ringtone ;
+		odrl:assignee <http://example.com/billie:888> ;
+		odrl:assigner <http://example.com/sony:10> ;
+		odrl:target <http://example.com/music:1234908>
+	] .
+
+

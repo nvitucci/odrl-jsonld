@@ -1,0 +1,13 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/policy:5531>
+	a odrl:Agreement ;
+    odrl:inheritAllowed "true"^^xsd:boolean ;
+	odrl:permission [
+		odrl:action odrl:print ;
+		odrl:target <http://example.com/report:2321> ;
+		odrl:assigner <http://example.com/pub:88> ;
+		odrl:assignee <http://example.com/billie:888> ;		
+	] .
+	

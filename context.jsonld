@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "http://www.w3.org/ns/odrl/2/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "policyid": "@id",
+    "policytype": "@type",
+    "conflict": {
+        "@id": "odrl:conflict",
+        "@type": "@vocab"
+    },
+    "undefined": {
+        "@id": "odrl:undefined",
+        "@type": "@vocab"
+    },
+    "inheritallowed": {
+        "@id": "odrl:inheritAllowed",
+        "@type": "xsd:boolean"
+    },
+    "inheritfrom": {
+        "@id": "odrl:inheritFrom",
+        "@type": "@id"
+    },
+    "inheritrelation": {
+        "@id": "odrl:inheritRelation",
+        "@type": "@id"
+    },
+    "policyprofile": {
+        "@id": "odrl:profile",
+        "@type": "@id"
+    },
+    "permissions": {
+        "@id": "odrl:permission",
+        "@type": "@id"
+    },
+    "assigner": {
+        "@id": "odrl:assigner",
+        "@type": "@id"
+    },
+    "assigner_scope": {
+        "@id": "odrl:scope",
+        "@type": "@id"
+    },
+    "assignee": {
+        "@id": "odrl:assignee",
+        "@type": "@id"
+    },
+    "assignee_scope": {
+        "@id": "odrl:scope",
+        "@type": "@id"
+    },
+    "target": {
+        "@id": "odrl:target",
+        "@type": "@id"
+    },
+    "output": {
+        "@id": "odrl:output",
+        "@type": "@id"
+    },
+    "action": {
+        "@id": "odrl:action",
+        "@type": "@id"
+    },
+    "constraints": {
+        "@id": "odrl:constraint",
+        "@type": "@id"
+    },
+    "name": {
+        "@id": "odrl:leftOperand",
+        "@type": "@id"
+    },
+    "operator": {
+        "@id": "odrl:operator",
+        "@type": "@id"
+    },
+    "rightoperand": {
+        "@id": "odrl:rightOperand"
+    },
+    "rightoperanddatatype": {
+        "@id": "odrl:dataType",
+        "@type": "@id"
+    },
+    "rightoperandunit": {
+        "@id": "odrl:unit",
+        "@type": "@id"
+    },
+    "status": {
+        "@id": "odrl:status",
+        "@type": "@vocab"
+    },
+    "duties": {
+        "@id": "odrl:duty",
+        "@type": "@id"
+    },
+    "prohibitions": {
+        "@id": "odrl:prohibition",
+        "@type": "@id"
+    }
+  }
+}

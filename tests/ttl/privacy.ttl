@@ -1,0 +1,25 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+
+<http://example.com/policy:1111>
+	a odrl:Privacy ;
+	odrl:permission [
+		odrl:action odrl:distribute ;
+		odrl:target <http://example.com/billie:888:personal-data> ;
+		odrl:assigner <http://example.com/billie:888> ;
+		odrl:assignee <http://example.com/gov:health:au> ;
+		odrl:duty [
+			odrl:action odrl:delete ;
+            odrl:target <http://example.com/billie:888:personal-data> ;
+			odrl:constraint [
+                odrl:leftOperand odrl:dateTime ;
+                odrl:operator odrl:eq ;
+                odrl:rightOperand "P30D"
+			]
+		] ;
+		odrl:constraint [
+            odrl:leftOperand odrl:purpose ;
+            odrl:operator odrl:eq ;
+            odrl:rightOperand "http://www.w3.org/2002/01/P3Pv1:contact"
+		]
+	] .
+

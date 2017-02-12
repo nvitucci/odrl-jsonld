@@ -1,0 +1,13 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+
+<http://example.com/policy:9999>
+	a odrl:Agreement ;
+	odrl:inheritFrom <http://example.com/policy:5531> ;
+	odrl:permission [
+		odrl:action odrl:display ;
+		odrl:target <http://example.com/report:2333> ;
+		odrl:assigner <http://example.com/pub:88> ;
+		odrl:assignee <http://example.com/class:IT01> ;
+        odrl:scope odrl:group
+	] .
+

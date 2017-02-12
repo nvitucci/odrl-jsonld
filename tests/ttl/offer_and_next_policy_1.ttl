@@ -1,0 +1,29 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/policy:5531>
+	a odrl:Offer ;
+	odrl:permission [
+		odrl:action odrl:distribute ;
+		odrl:target <http://example.com/wallpaper:2321> ;
+		odrl:assigner <http://example.com/sony:99> ;
+		odrl:constraint [
+            odrl:leftOperand odrl:spatial ;
+            odrl:operator odrl:eq ;
+            odrl:rightOperand "http://www.itu.int/tML/tML-ISO-3166:it"
+		] ;
+		odrl:duty [
+            odrl:action odrl:compensate ;
+            odrl:constraint [
+                odrl:dataType xsd:decimal ;
+                odrl:leftOperand odrl:payAmount ;
+                odrl:operator odrl:eq ;
+                odrl:rightOperand "1000.00" ;
+                odrl:unit <http://cvx.iptc.org/iso4217a/EUR>
+            ]
+        ], [
+            odrl:action odrl:nextPolicy ;
+            odrl:target <http://example.com/policy:7777> 
+        ]
+    ] . 
+

@@ -1,0 +1,9 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+
+<http://example.com/policy:7777>
+	a odrl:Set ;
+	odrl:permission [
+		odrl:action odrl:display ;
+		odrl:target <http://example.com/wallpaper:2321>
+	] .
+

@@ -1,0 +1,43 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/policy:9001>
+	a odrl:Agreement ;
+	odrl:permission [
+		odrl:target <http://example.com/music:4545> ;
+		odrl:assigner <http://example.com/sony:10> ;
+		odrl:assignee <http://example.com/billie:888> ;
+		odrl:action odrl:play ;
+		odrl:duty [
+            odrl:action odrl:compensate ;
+            odrl:constraint [
+                odrl:dataType xsd:decimal ;
+                odrl:leftOperand odrl:payAmount ;
+                odrl:operator odrl:eq ;
+                odrl:rightOperand "0.50" ;
+                odrl:unit <http://cvx.iptc.org/iso4217a/AUD>
+            ] 
+        ]
+	] ;
+	odrl:permission [
+		odrl:target <http://example.com/music:4545> ;
+		odrl:assigner <http://example.com/sony:10> ;
+		odrl:assignee <http://example.com/billie:888> ;
+		odrl:action odrl:copy ;
+		odrl:duty [
+            odrl:action odrl:compensate ;
+            odrl:constraint [
+                odrl:dataType xsd:decimal ;
+                odrl:leftOperand odrl:payAmount ;
+                odrl:operator odrl:eq ;
+                odrl:rightOperand "0.50" ;
+                odrl:unit <http://cvx.iptc.org/iso4217a/AUD>
+            ] 
+        ] ;
+		odrl:constraint [
+            odrl:leftOperand odrl:count ;
+            odrl:operator odrl:lteq ;
+            odrl:rightOperand "1"
+		]
+	] .
+

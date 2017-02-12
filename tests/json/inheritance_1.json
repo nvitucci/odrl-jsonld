@@ -1,0 +1,11 @@
+{
+    "policytype": "http://www.w3.org/ns/odrl/2/Agreement",
+    "policyid": "http://example.com/policy:5531",
+    "inheritallowed": true,
+    "permissions": [{
+        "target": "http://example.com/report:2321",
+        "action": "http://www.w3.org/ns/odrl/2/print",
+        "assigner": "http://example.com/pub:88",
+        "assignee": "http://example.com/billie:888"
+    }]
+}

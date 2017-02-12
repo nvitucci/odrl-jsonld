@@ -1,0 +1,12 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+
+<http://example.com/policy:0099>
+	a odrl:Set;
+	odrl:permission [
+		odrl:target <http://example.com/asset:9898> ;
+		odrl:action odrl:reproduce
+	] ;
+	odrl:prohibition [
+		odrl:target <http://example.com/asset:9898> ;
+		odrl:action odrl:modify
+	] .
